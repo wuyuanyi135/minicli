@@ -159,5 +159,5 @@ TEST_CASE("Malformed option (missing argument)") {
   CHECK_EXCEPTION_OR_ERROR_CODE(
       app.ParseLine("hello -v"),
       const std::runtime_error&,
-      FAILED_CHECK);
+      MALFORMED_OPTION);
 }
